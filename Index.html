@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Tiket Konser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">VIBE<span>FEST</span></a>
+        <span class="nav-label">OFFICIAL TICKET BOOKING</span>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <div class="hero-content">
+                <span class="tag">✦ THE NIGHT IS YOURS</span>
+                <h1>MAKE YOUR<br> <span>NIGHT</span> UNFORGETTABLE.</h1>
+                <p>
+                    Satu malam, ribuan cerita, dan musik yang menyatukan kita.
+                    Amankan tiketmu sekarang!
+                </p>
+                <div class="event-info">
+                    <div>
+                        <span class="info-label">EVENT</span>
+                        <strong>Vibe Fest 2026</strong>
+                    </div>
+                    <div>
+                        <span class="info-label">LOCATION</span>
+                        <strong>Grand Music Hall</strong>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-decoration">
+                <div class="disc">♫</div>
+                <div class="equalizer">
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                    <span></span><span></span><span></span>
+                </div>
+                <p>FEEL THE MUSIC.<br>LIVE THE MOMENT.</p>
+            </div>
+        </section>
+
+        <section class="booking-card">
+            <div class="section-heading">
+                <div>
+                    <span class="tag">YOUR EXPERIENCE STARTS HERE</span>
+                    <h2>Pesan Tiketmu</h2>
+                    <p>Lengkapi data di bawah untuk melakukan pemesanan.</p>
+                </div>
+                <div class="step">01 <span>/ 01</span></div>
+            </div>
+
+            <form action="#" method="post">
+
+                <h3 class="form-title">
+                    <span class="number">01</span> Informasi Pemesan
+                </h3>
+
+                <div class="form-grid">
+                    <div class="field full">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama"
+                               placeholder="Masukkan nama lengkapmu"
+                               autocomplete="name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Alamat E-mail</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="nama@email.com"
+                               autocomplete="email" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="telepon">Nomor Telepon</label>
+                        <input type="tel" id="telepon" name="telepon"
+                               placeholder="08xxxxxxxxxx"
+                               autocomplete="tel" required>
+                    </div>
+                </div>
+
+                <div class="form-divider"></div>
+
+                <h3 class="form-title">
+                    <span class="number">02</span> Pilih Tiket
+                </h3>
+
+                <div class="ticket-options">
+
+                    <label class="ticket-option">
+                        <input type="radio" name="jenis_tiket"
+                               value="Regular" required>
+                        <div class="ticket-box regular">
+                            <div class="ticket-top">
+                                <span class="ticket-icon">♫</span>
+                                <span class="ticket-badge">STANDARD</span>
+                            </div>
+                            <h4>REGULAR</h4>
+                            <p class="ticket-desc">Nikmati konser dari area reguler.</p>
+                            <div class="price">Rp50.000</div>
+                            <span class="select-text">Pilih tiket ↗</span>
+                        </div>
+                    </label>
+
+                    <label class="ticket-option">
+                        <input type="radio" name="jenis_tiket"
+                               value="VIP" required>
+                        <div class="ticket-box vip">
+                            <div class="ticket-top">
+                                <span class="ticket-icon">✦</span>
+                                <span class="ticket-badge">EXCLUSIVE</span>
+                            </div>
+                            <h4>VIP PASS</h4>
+                            <p class="ticket-desc">Pengalaman konser lebih istimewa.</p>
+                            <div class="price">Rp100.000</div>
+                            <span class="select-text">Pilih tiket ↗</span>
+                        </div>
+                    </label>
+
+                </div>
+
+                <div class="form-grid seat-grid">
+                    <div class="field">
+                        <label for="duduk">Pilihan Tempat Duduk</label>
+                        <select id="duduk" name="tempat_duduk" required>
+                            <option value="" disabled selected>
+                                Pilih tempat duduk
+                            </option>
+                            <option value="Panggung Depan">Panggung Depan</option>
+                            <option value="Tengah">Tengah</option>
+                            <option value="Balkon">Balkon</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="jumlah">Jumlah Tiket</label>
+                        <input type="number" id="jumlah" name="jumlah"
+                               min="1" max="10" value="1" required>
+                        <small>Maksimal 10 tiket per pemesanan.</small>
+                    </div>
+                </div>
+
+                <div class="field question-field">
+                    <label for="pertanyaan">Pertanyaan atau Catatan</label>
+                    <textarea id="pertanyaan" name="pertanyaan"
+                              rows="4"
+                              placeholder="Tuliskan pertanyaan atau catatanmu di sini..."></textarea>
+                </div>
+
+                <div class="notice">
+                    <span class="notice-icon">ⓘ</span>
+                    <p>
+                        Pastikan seluruh data sudah benar sebelum melanjutkan
+                        pemesanan.
+                    </p>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <span>Pesan Tiket Sekarang</span>
+                    <span class="arrow">↗</span>
+                </button>
+
+                <p class="footer-note">
+                    MADE FOR MUSIC LOVERS <span>✦</span> VIBEFEST 2026
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 VibeFest. All rights reserved.</p>
+        <p>Feel the beat. Create the memory.</p>
+    </footer>
+
+</body>
+</html>
