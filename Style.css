@@ -1,13 +1,14 @@
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
-    --background: #090a16;
-    --surface: #121426;
-    --surface-light: #191b32;
-    --purple: #9b5cff;
-    --pink: #ff62c0;
-    --text: #f7f5ff;
-    --muted: #aaaac1;
+    --background: #0c0c18;
+    --surface: #151526;
+    --surface-light: #1d1d32;
+    --purple: #a78bfa;
+    --pink: #e9a5d0;
+    --text: #f7f5fc;
+    --muted: #aaa8be;
     --border: rgba(255, 255, 255, 0.12);
 }
 
@@ -17,10 +18,6 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'DM Sans', sans-serif;
     background: var(--background);
@@ -28,218 +25,203 @@ body {
     line-height: 1.6;
 }
 
-/* NAVBAR */
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 22px 8%;
     border-bottom: 1px solid var(--border);
-    background: rgba(9, 10, 22, 0.95);
 }
 
 .logo {
     color: var(--text);
-    text-decoration: none;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 25px;
+    font-size: 21px;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
 
 .logo span {
     color: var(--pink);
 }
 
-.navbar p {
+.nav-caption {
     color: var(--muted);
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 2px;
 }
-
-/* MAIN CONTAINER */
 
 .container {
     width: 100%;
     max-width: 1100px;
     margin: auto;
-    padding: 35px 25px 70px;
+    padding: 35px 25px 65px;
 }
 
-/* HERO SECTION */
+/* BAGIAN UTAMA */
 
 .hero {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-height: 390px;
-    padding: 55px;
+    min-height: 350px;
+    padding: 50px;
     overflow: hidden;
-    border: 1px solid rgba(155, 92, 255, 0.35);
-    border-radius: 25px;
+    border: 1px solid rgba(167, 139, 250, 0.3);
+    border-radius: 22px;
     background:
         radial-gradient(
-            circle at 80% 30%,
-            rgba(155, 92, 255, 0.27),
+            circle at 85% 35%,
+            rgba(167, 139, 250, 0.2),
             transparent 35%
         ),
-        linear-gradient(125deg, #19152f, #101126 65%, #24112e);
+        linear-gradient(125deg, #211b38, #121224 70%, #291b32);
 }
 
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 550px;
+    max-width: 530px;
 }
 
-.event-label,
-.section-label {
-    display: inline-block;
+.eyebrow {
     color: var(--pink);
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
     letter-spacing: 2px;
 }
 
 .hero h1 {
-    margin: 15px 0;
+    margin: 14px 0;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(48px, 8vw, 82px);
+    font-size: clamp(55px, 8vw, 82px);
     line-height: 0.98;
     letter-spacing: -3px;
 }
 
 .hero h1 span {
     color: var(--pink);
-    text-shadow: 0 0 30px rgba(255, 98, 192, 0.25);
 }
 
-.hero-description {
-    max-width: 400px;
-    margin: 20px 0 30px;
-    color: #c4c1d8;
+.description {
+    max-width: 390px;
+    margin: 20px 0 28px;
+    color: #c5c2d7;
     font-size: 14px;
 }
 
-.event-info {
+.event-details {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 35px;
 }
 
-.event-info div {
+.event-details div {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-.info-label {
+.detail-label {
     color: var(--muted);
     font-size: 10px;
     letter-spacing: 1.5px;
 }
 
-.event-info strong {
-    font-size: 12px;
+.event-details strong {
+    font-size: 13px;
 }
 
-/* MUSIC DECORATION */
+/* DEKORASI */
 
-.music-decoration {
+.hero-art {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 230px;
-    height: 230px;
+    width: 220px;
+    height: 220px;
     flex-shrink: 0;
 }
 
-.circle {
+.art-ring {
     position: absolute;
-    border: 1px solid rgba(255, 98, 192, 0.4);
+    border: 1px solid rgba(233, 165, 208, 0.5);
     border-radius: 50%;
 }
 
-.circle-one {
+.ring-one {
     width: 210px;
     height: 210px;
 }
 
-.circle-two {
-    width: 160px;
-    height: 160px;
-    border-color: rgba(155, 92, 255, 0.8);
+.ring-two {
+    width: 155px;
+    height: 155px;
+    border-color: rgba(167, 139, 250, 0.8);
 }
 
-.music-symbol {
-    position: relative;
-    z-index: 1;
-    color: var(--pink);
-    font-size: 110px;
-    text-shadow: 0 0 35px rgba(255, 98, 192, 0.7);
-}
-
-.equalizer {
-    position: absolute;
-    bottom: 0;
+.art-center {
     display: flex;
     align-items: center;
-    gap: 7px;
-    height: 30px;
+    justify-content: center;
+    width: 95px;
+    height: 95px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background: linear-gradient(145deg, #a78bfa, #e9a5d0);
+    color: #171326;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
 }
 
-.equalizer span {
-    width: 5px;
-    border-radius: 10px;
-    background: var(--purple);
-}
-
-.equalizer span:nth-child(1),
-.equalizer span:nth-child(7) {
+.art-dot {
+    position: absolute;
+    width: 12px;
     height: 12px;
-}
-
-.equalizer span:nth-child(2),
-.equalizer span:nth-child(6) {
-    height: 22px;
-}
-
-.equalizer span:nth-child(3),
-.equalizer span:nth-child(5) {
-    height: 16px;
-}
-
-.equalizer span:nth-child(4) {
-    height: 28px;
+    border-radius: 50%;
     background: var(--pink);
 }
 
-/* BOOKING SECTION */
+.dot-one {
+    top: 25px;
+    right: 35px;
+}
+
+.dot-two {
+    bottom: 25px;
+    left: 30px;
+    background: var(--purple);
+}
+
+.dot-three {
+    top: 95px;
+    right: 0;
+    width: 7px;
+    height: 7px;
+}
+
+/* FORM PEMESANAN */
 
 .booking-section {
-    margin-top: 45px;
-    padding: 40px;
+    margin-top: 35px;
+    padding: 38px;
     border: 1px solid var(--border);
-    border-radius: 24px;
+    border-radius: 22px;
     background: var(--surface);
-    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.2);
 }
 
 .section-heading {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 .section-heading h2 {
-    margin: 8px 0;
+    margin: 7px 0;
     font-family: 'Space Grotesk', sans-serif;
-    font-size: clamp(26px, 4vw, 36px);
-}
-
-.section-heading h2 span {
-    color: var(--pink);
+    font-size: 34px;
 }
 
 .section-heading p {
@@ -247,12 +229,10 @@ body {
     font-size: 13px;
 }
 
-/* FORM */
-
 .booking-form {
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 21px;
 }
 
 .form-group {
@@ -262,7 +242,7 @@ body {
     min-width: 0;
 }
 
-.form-group label {
+.form-group > label {
     font-size: 13px;
     font-weight: 600;
 }
@@ -270,7 +250,7 @@ body {
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 18px;
 }
 
 input[type="text"],
@@ -279,27 +259,27 @@ input[type="tel"],
 select,
 textarea {
     width: 100%;
-    padding: 14px 15px;
+    padding: 14px;
     border: 1px solid var(--border);
-    border-radius: 10px;
+    border-radius: 9px;
     outline: none;
     background: var(--surface-light);
     color: var(--text);
     font-family: inherit;
     font-size: 13px;
-    transition: border-color 0.25s, box-shadow 0.25s;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: #777891;
+    color: #85839c;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
     border-color: var(--purple);
-    box-shadow: 0 0 0 3px rgba(155, 92, 255, 0.13);
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.12);
 }
 
 select {
@@ -310,7 +290,7 @@ textarea {
     resize: vertical;
 }
 
-/* TICKET OPTIONS */
+/* PILIHAN TIKET */
 
 .ticket-options {
     display: grid;
@@ -320,44 +300,36 @@ textarea {
 
 .ticket-card {
     position: relative;
-    display: block;
     padding: 20px;
-    overflow: hidden;
     border: 1px solid var(--border);
-    border-radius: 14px;
+    border-radius: 12px;
     background: var(--surface-light);
     cursor: pointer;
-    transition: 0.25s ease;
+    transition: 0.2s ease;
 }
 
 .ticket-card:hover {
     border-color: var(--purple);
-    transform: translateY(-2px);
 }
 
 .ticket-card:has(input:checked) {
     border-color: var(--purple);
-    background: linear-gradient(
-        135deg,
-        rgba(155, 92, 255, 0.18),
-        rgba(155, 92, 255, 0.04)
-    );
-    box-shadow: 0 0 20px rgba(155, 92, 255, 0.08);
+    background: rgba(167, 139, 250, 0.1);
 }
 
 .ticket-card.vip:has(input:checked) {
     border-color: var(--pink);
-    background: linear-gradient(
-        135deg,
-        rgba(255, 98, 192, 0.16),
-        rgba(255, 98, 192, 0.04)
-    );
+    background: rgba(233, 165, 208, 0.08);
 }
 
 .ticket-card input {
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 18px;
+    accent-color: var(--purple);
+}
+
+.ticket-card.vip input {
     accent-color: var(--pink);
 }
 
@@ -367,7 +339,7 @@ textarea {
     gap: 7px;
 }
 
-.ticket-name {
+.ticket-label {
     color: var(--muted);
     font-size: 10px;
     font-weight: 700;
@@ -376,10 +348,10 @@ textarea {
 
 .ticket-content strong {
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 27px;
+    font-size: 26px;
 }
 
-.ticket-card.vip .ticket-content strong {
+.ticket-card.vip strong {
     color: var(--pink);
 }
 
@@ -388,33 +360,33 @@ textarea {
     font-size: 11px;
 }
 
-/* SUBMIT BUTTON */
+/* TOMBOL */
 
 .submit-button {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     width: 100%;
-    padding: 16px;
+    padding: 15px;
     border: none;
-    border-radius: 11px;
-    background: linear-gradient(100deg, #8650f5, #e74cb2);
-    color: white;
+    border-radius: 9px;
+    background: linear-gradient(100deg, #8b70dc, #d98dbd);
+    color: #151222;
     font-family: inherit;
     font-size: 14px;
     font-weight: 700;
     cursor: pointer;
-    transition: transform 0.25s, box-shadow 0.25s;
-}
-
-.submit-button span {
-    font-size: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .submit-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(180, 76, 220, 0.3);
+    box-shadow: 0 8px 24px rgba(167, 139, 250, 0.2);
+}
+
+.submit-button span {
+    font-size: 20px;
 }
 
 .form-note {
@@ -426,13 +398,13 @@ textarea {
 /* FOOTER */
 
 .footer {
-    padding: 30px 20px 40px;
+    padding: 28px 20px 35px;
     border-top: 1px solid var(--border);
     text-align: center;
 }
 
 .footer .logo {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .footer p {
@@ -442,24 +414,24 @@ textarea {
 }
 
 .footer small {
-    color: #74758e;
+    color: #77758d;
     font-size: 10px;
 }
 
-/* RESPONSIVE DESIGN */
+/* TAMPILAN HP */
 
 @media (max-width: 700px) {
     .navbar {
         padding: 18px 6%;
     }
 
-    .navbar p {
-        font-size: 8px;
-        letter-spacing: 1px;
+    .logo {
+        font-size: 17px;
     }
 
-    .logo {
-        font-size: 21px;
+    .nav-caption {
+        font-size: 8px;
+        letter-spacing: 1px;
     }
 
     .container {
@@ -467,63 +439,63 @@ textarea {
     }
 
     .hero {
-        min-height: auto;
-        padding: 35px 25px;
+        min-height: 330px;
+        padding: 32px 24px;
     }
 
     .hero h1 {
         font-size: 58px;
     }
 
-    .music-decoration {
-        position: absolute;
-        right: -95px;
-        bottom: 10px;
-        opacity: 0.25;
-        transform: scale(0.85);
-    }
-
     .hero-content {
         max-width: 100%;
     }
 
-    .event-info {
+    .hero-art {
+        position: absolute;
+        right: -105px;
+        bottom: 5px;
+        opacity: 0.22;
+        transform: scale(0.9);
+    }
+
+    .event-details {
         gap: 20px;
+    }
+
+    .event-details strong {
+        font-size: 11px;
     }
 
     .booking-section {
-        padding: 25px 18px;
         margin-top: 25px;
+        padding: 25px 18px;
     }
 
-    .form-row {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .section-heading h2 {
+        font-size: 29px;
     }
 
+    .form-row,
     .ticket-options {
         grid-template-columns: 1fr;
     }
 
-    .ticket-card {
-        padding: 18px;
+    .form-row {
+        gap: 20px;
     }
 }
 
 @media (max-width: 380px) {
     .hero h1 {
-        font-size: 48px;
+        font-size: 49px;
     }
 
     .hero {
-        padding: 30px 20px;
+        padding: 28px 19px;
     }
 
-    .event-info strong {
-        font-size: 10px;
-    }
-
-    .section-heading h2 {
-        font-size: 25px;
+    .description {
+        font-size: 13px;
     }
 }
